@@ -10,7 +10,7 @@ const HOME = {
  */
 const USER = {
   ROOT: 'user',
-  CREATE: 'create',
+  SIGNUP: 'signup',
   UPDATE: 'update/:id',
   READ: 'read/:id',
   EMAIL: 'read/email/:email',

@@ -23,10 +23,10 @@ async function bootstrap() {
   });
 
   const config = new DocumentBuilder()
-    .setTitle('NFT-M APIs')
-    .setDescription('API description for NFT-M v2')
+    .setTitle('Swimple')
+    .setDescription('API description for Swimple v1')
     .setVersion('1.0')
-    .addTag('nft')
+    .addTag('swimple')
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api-docs', app, document);

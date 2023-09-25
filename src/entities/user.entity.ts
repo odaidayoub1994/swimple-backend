@@ -1,4 +1,5 @@
 import COMMON from 'src/common/data';
+import { Role } from 'src/modules/auth/entities/role.enum';
 // import { Role } from 'src/modules/auth/entities/role.enum';
 import {
   Entity,
@@ -18,31 +19,24 @@ export class User {
   @Column()
   email: string;
 
-  @Column({ nullable: true })
-  password?: string;
-
-  // @Column({
-  //   type: 'enum',
-  //   enum: Role,
-  //   default: Role.BUYER,
-  //   nullable: true,
-  // })
-  // role: string;
-
-  @Column({ nullable: true })
+  @Column()
   name: string;
 
-  @Column({ nullable: true })
-  designation: string;
+  @Column()
+  password?: string;
 
-  @Column({ nullable: true })
+  @Column({
+    type: 'enum',
+    enum: Role,
+    default: Role.STUDENT,
+  })
+  role: string;
+
+  @Column()
   phone_code: string;
 
-  @Column({ nullable: true })
+  @Column()
   phone_number: string;
-
-  @Column({ nullable: true })
-  dob: Date;
 
   @Column({ default: false })
   is_deleted: boolean;

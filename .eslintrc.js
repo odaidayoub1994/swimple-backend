@@ -82,7 +82,7 @@ module.exports = {
     ],
     'max-len': [
       'error',
-      { code: 150, ignoreStrings: true, tabWidth: 6, comments: 100 },
+      { code: 200, ignoreStrings: true, tabWidth: 6, comments: 100 },
     ],
   },
 };
